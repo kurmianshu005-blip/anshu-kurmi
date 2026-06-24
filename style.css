@@ -1671,11 +1671,12 @@ nav{
         font-size:32px;
     }
 
-    /* Hero */
-
+    /* HERO SECTION */
     .hero-container{
         flex-direction:column-reverse;
         text-align:center;
+        align-items:center;
+        justify-content:center;
     }
 
     .hero-content,
@@ -1696,8 +1697,12 @@ nav{
         align-items:center;
     }
 
-    /* About */
+    .hero-image img{
+        max-width:100%;
+        height:auto;
+    }
 
+    /* ABOUT */
     .about-container{
         flex-direction:column;
     }
@@ -1707,14 +1712,12 @@ nav{
         max-width:320px;
     }
 
-    /* Skills */
-
+    /* SKILLS */
     .skills-grid{
         grid-template-columns:1fr;
     }
 
-    /* Education */
-
+    /* EDUCATION */
     .education-grid{
         grid-template-columns:1fr;
     }
@@ -1724,8 +1727,7 @@ nav{
         text-align:center;
     }
 
-    /* Experience */
-
+    /* EXPERIENCE */
     .timeline-item{
         flex-direction:column;
     }
@@ -1742,28 +1744,23 @@ nav{
         grid-template-columns:1fr 1fr;
     }
 
-    /* Projects */
-
+    /* PROJECTS */
     .projects-grid{
         grid-template-columns:1fr;
     }
 
-    /* Certificates */
-
+    /* CERTIFICATES */
     .certificate-grid{
         grid-template-columns:1fr;
     }
 
-    /* Contact */
-
+    /* CONTACT */
     .contact-container{
         flex-direction:column;
     }
-
 }
 
-/* Small Mobile */
-
+/* SMALL MOBILE */
 @media (max-width:480px){
 
     .hero-content h1{
@@ -1782,7 +1779,15 @@ nav{
     .exp-right{
         grid-template-columns:1fr;
     }
+}
 
+/* GLOBAL FIX */
+*{
+    box-sizing:border-box;
+}
+
+html, body{
+    overflow-x:hidden;
 }
 
 }
