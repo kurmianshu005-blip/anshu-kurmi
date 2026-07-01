@@ -202,6 +202,8 @@ nav ul li a.active{
 
 }
 
+/* hero section */ 
+
 .hero{
 
     width:100%;
@@ -211,16 +213,10 @@ nav ul li a.active{
     align-items:center;
     justify-content:center;
 
-    padding:50px 8% 80px;
-
-    background:
-    radial-gradient(circle at top left,#163b88 0%,transparent 35%),
-    radial-gradient(circle at bottom right,#5b21b6 0%,transparent 35%),
-    linear-gradient(135deg,#020817,#081329,#020817);
-
-    overflow:hidden;
+    padding:130px 8% 80px;
 
     position:relative;
+    overflow:hidden;
 
 }
 
@@ -376,21 +372,8 @@ nav ul li a.active{
 
 }
 
-/* HELLO SECTION */
+/* HELLO SECTION image */
 
-.hero-image{
-
-    width:50%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    position:relative;
-
-}
 
 .hero-image{
 
@@ -428,17 +411,19 @@ nav ul li a.active{
 
 .hero-image img{
 
-    width:650px;
+    width:100%;
 
-    max-width:none;
+    max-width:550px;
 
-    height:650px;
+    height:auto;
 
     object-fit:contain;
 
     position:relative;
 
     z-index:5;
+
+    
 
     filter:drop-shadow(0 0 35px rgba(0,212,255,.45));
 
@@ -481,13 +466,29 @@ transform:rotate(360deg);
 
 }
 
+/* ================= TABLET ================= */
+
 @media(max-width:992px){
+
+.hero{
+
+padding:110px 5% 60px;
+
+}
 
 .hero-container{
 
+display:flex;
+
 flex-direction:column-reverse;
 
+align-items:center;
+
+justify-content:center;
+
 text-align:center;
+
+gap:35px;
 
 }
 
@@ -497,41 +498,81 @@ width:100%;
 
 }
 
+.hero-content p{
+
+margin:auto;
+
+}
+
+.hero-btn{
+
+justify-content:center;
+
+}
+
 .hero-image{
 
 width:100%;
 
-margin-bottom:40px;
-
-}
-
-.hero-image::before{
-
-width:400px;
-
-height:400px;
+margin:0;
 
 }
 
 .hero-image img{
 
-max-width:320px;
+max-width:420px;
+
+width:100%;
+
+height:auto;
+
+}
+
+.hero-image::before{
+
+width:420px;
+
+height:420px;
 
 }
 
 }
+
+/* ================= MOBILE ================= */
 
 @media(max-width:576px){
 
 .hero{
 
-padding-top:120px;
+padding:100px 20px 50px;
+
+}
+
+.hero-content h1{
+
+font-size:42px;
+
+}
+
+.hero-content h2{
+
+font-size:20px;
 
 }
 
 .hero-btn{
 
 flex-direction:column;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.hero-image img{
+
+max-width:280px;
 
 }
 
@@ -540,12 +581,6 @@ flex-direction:column;
 width:280px;
 
 height:280px;
-
-}
-
-.hero-image img{
-
-max-width:240px;
 
 }
 
