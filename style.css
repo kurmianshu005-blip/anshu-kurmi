@@ -202,6 +202,76 @@ nav ul li a.active{
 
 }
 
+/* ================= MOBILE NAVBAR ================= */
+
+/* ================= MOBILE MENU ================= */
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    .navbar .btn{
+        display:none;
+    }
+
+    #mainNav{
+
+        position:fixed;
+
+        top:80px;
+
+        left:0;
+
+        width:100%;
+
+        background:#07152f;
+
+        max-height:0;
+
+        overflow:hidden;
+
+        transition:max-height .4s ease;
+
+        z-index:999;
+
+    }
+
+    #mainNav.nav-active{
+
+        max-height:80vh;
+
+    }
+
+    #mainNav ul{
+
+        flex-direction:column;
+
+        gap:0;
+
+    }
+
+    #mainNav ul li{
+
+        width:100%;
+
+    }
+
+    #mainNav ul li a{
+
+        display:block;
+
+        padding:18px;
+
+        text-align:center;
+
+        border-bottom:1px solid rgba(255,255,255,.08);
+
+    }
+
+}
+
 /* hero section */ 
 
 .hero{
